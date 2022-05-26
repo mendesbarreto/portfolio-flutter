@@ -1,5 +1,7 @@
 # Portfolio test with Flutter
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/f135b4db4e584f8c9ab328a669297252)](https://app.codacy.com/gh/mendesbarreto/portfolio-flutter?utm_source=github.com&utm_medium=referral&utm_content=mendesbarreto/portfolio-flutter&utm_campaign=Badge_Grade_Settings)
+
 Hello guys, this is my first portfolio with Flutter. I hope you like it.
 
 
