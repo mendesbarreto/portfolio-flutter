@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'features/main_menu/presentation/widgets/main_menu.dart';
+import 'features/profile/presentation/widgets/profile.dart';
 
 void main() {
   runApp(const PortfolioApp());
@@ -79,7 +79,9 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: const Color(0xFFEFF0F7),
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
-          return const MainMenu();
+          return Center(
+            child: const Profile(),
+          );
         },
       ),
     );
