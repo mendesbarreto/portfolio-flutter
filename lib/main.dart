@@ -15,33 +15,32 @@ class PortfolioApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-        primaryColor: const Color(0xFFFFB400),
-        buttonColor: const Color(0xFFFFB502),
-        fontFamily: 'Inter',
-        textTheme: const TextTheme(
-          headline3: TextStyle(
-            color: Color(0xff2b2b2b),
-            fontSize: 48.0,
-            fontWeight: FontWeight.bold,
-          ),
-          subtitle1: TextStyle(
-            color: Color(0xff767676),
-            fontSize: 16,
-            height: 24.0 / 16,
-            fontWeight: FontWeight.normal,
-          ),
-        )
-      ),
+          // This is the theme of your application.
+          //
+          // Try running your application with "flutter run". You'll see the
+          // application has a blue toolbar. Then, without quitting the app, try
+          // changing the primarySwatch below to Colors.green and then invoke
+          // "hot reload" (press "r" in the console where you ran "flutter run",
+          // or simply save your changes to "hot reload" in a Flutter IDE).
+          // Notice that the counter didn't reset back to zero; the application
+          // is not restarted.
+          primarySwatch: Colors.blue,
+          primaryColor: const Color(0xFFFFB400),
+          buttonColor: const Color(0xFFFFB502),
+          fontFamily: 'Inter',
+          textTheme: const TextTheme(
+            headline3: TextStyle(
+              color: Color(0xff2b2b2b),
+              fontSize: 48.0,
+              fontWeight: FontWeight.bold,
+            ),
+            subtitle1: TextStyle(
+              color: Color(0xff767676),
+              fontSize: 16,
+              height: 24.0 / 16,
+              fontWeight: FontWeight.normal,
+            ),
+          )),
       home: const HomePage(),
     );
   }
@@ -78,21 +77,11 @@ class _HomePageState extends State<HomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       backgroundColor: const Color(0xFFEFF0F7),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            MainMenu(),
-          ],
-        ),
+      body: LayoutBuilder(
+        builder: (BuildContext context, BoxConstraints constraints) {
+          return const MainMenu();
+        },
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }

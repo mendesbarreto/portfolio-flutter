@@ -17,37 +17,35 @@ class MainMenuContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          RichText(
-            text: TextSpan(
-                style: Theme.of(context).textTheme.headline3,
-                text: title,
-                children: <TextSpan>[
-                  TextSpan(
-                      text: titleRole,
-                      style: TextStyle(color: Theme.of(context).primaryColor)),
-                ]),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        RichText(
+          text: TextSpan(
+              style: Theme.of(context).textTheme.headline3,
+              text: title,
+              children: <TextSpan>[
+                TextSpan(
+                    text: titleRole,
+                    style: TextStyle(color: Theme.of(context).primaryColor)),
+              ]),
+        ),
+        const SizedBox(height: 18),
+        Text(
+          description,
+          style: Theme.of(context).textTheme.subtitle1,
+        ),
+        const SizedBox(height: 48),
+        SizedBox(
+          height: 52,
+          width: 154,
+          child: BasicButton(
+            onPressed: () {},
+            rightImage: Image.asset('assets/images/icon_arrow_right.png'),
+            text: 'Hire me'.toUpperCase(),
           ),
-          const SizedBox(height: 18),
-          Text(
-            description,
-            style: Theme.of(context).textTheme.subtitle1,
-          ),
-          const SizedBox(height: 48),
-          SizedBox(
-            height: 52,
-            width: 154,
-            child: BasicButton(
-              onPressed: () {},
-              rightImage: Image.asset('assets/images/icon_arrow_right.png'),
-              text: 'Hire me'.toUpperCase(),
-            ),
-          ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
