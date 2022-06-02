@@ -79,8 +79,8 @@ class _HomePageState extends State<HomePage> {
       backgroundColor: const Color(0xFFEFF0F7),
       body: LayoutBuilder(
         builder: (BuildContext context, BoxConstraints constraints) {
-          return Center(
-            child: const Profile(),
+          return const Center(
+            child: Profile(),
           );
         },
       ),
