@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../common/app_theme_data.dart';
 import '../../../../common/circle_button.dart';
+import '../../../../common/r.dart';
 
 class ProfileImage extends StatelessWidget {
   const ProfileImage({
@@ -60,9 +61,15 @@ class Profile extends StatelessWidget {
         ),
       ),
       const SizedBox(height: 16),
-      CircleButton(
-          onPressed: () {},
-          image: Image.asset('assets/images/icon_arrow_right.png')),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          CircleButton(onPressed: () {}, imageAsset: R.iconFacebook),
+          CircleButton(onPressed: () {}, imageAsset: R.iconTwitter),
+          CircleButton(onPressed: () {}, imageAsset: R.iconLinkedIn),
+          CircleButton(onPressed: () {}, imageAsset: R.iconGithub),
+        ],
+      ),
     ]);
   }
 }

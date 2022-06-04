@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 class CircleButton extends StatelessWidget {
   const CircleButton({
     super.key,
-    required this.image,
+    required this.imageAsset,
     this.size,
     this.iconSize,
     required this.onPressed,
   });
 
-  final Image image;
+  final Image imageAsset;
   final VoidCallback onPressed;
   final Size? size;
   final double? iconSize;
@@ -25,10 +25,13 @@ class CircleButton extends StatelessWidget {
           shape: const CircleBorder(),
         ),
         child: IconButton(
+          splashRadius: size?.width ?? 16,
           padding: const EdgeInsets.all(0),
-          alignment: Alignment.center,
-          icon: image,
-          iconSize: iconSize ?? 14,
+          icon: ImageIcon(
+            imageAsset.image,
+            size: iconSize ?? 16,
+          ),
+          iconSize: iconSize ?? 10,
           onPressed: () {},
         ),
       ),
