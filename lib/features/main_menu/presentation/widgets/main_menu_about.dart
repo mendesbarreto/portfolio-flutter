@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../common/r.dart';
 import 'container_shapes.dart';
 import 'main_menu_content.dart';
 
@@ -28,7 +29,7 @@ class MainMenuAbout extends StatelessWidget {
               MainMenuContent(
                   title: title, titleRole: titleRole, description: description),
               const SizedBox(width: 16),
-              Image.asset('assets/images/profile_place_holder.png'),
+              R.profilePlaceHolder,
             ],
           ),
         ],
