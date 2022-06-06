@@ -28,10 +28,6 @@ class ProfileImage extends StatelessWidget {
   }
 }
 
-extension AppColors on Colors {
-  Color get portfolioLightGray => const Color(0xff767676);
-}
-
 class Profile extends StatelessWidget {
   const Profile({super.key});
 
@@ -39,7 +35,7 @@ class Profile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
       ProfileImage(
-        image: Image.asset('assets/images/profile_place_holder.png'),
+        image: R.profileImage,
       ),
       const SizedBox(height: 32),
       const Text(
@@ -62,11 +58,14 @@ class Profile extends StatelessWidget {
       ),
       const SizedBox(height: 16),
       Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           CircleButton(onPressed: () {}, imageAsset: R.iconFacebook),
+          const SizedBox(width: 15),
           CircleButton(onPressed: () {}, imageAsset: R.iconTwitter),
+          const SizedBox(width: 15),
           CircleButton(onPressed: () {}, imageAsset: R.iconLinkedIn),
+          const SizedBox(width: 15),
           CircleButton(onPressed: () {}, imageAsset: R.iconGithub),
         ],
       ),

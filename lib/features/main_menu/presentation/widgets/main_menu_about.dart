@@ -20,18 +20,29 @@ class MainMenuAbout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.white,
-      padding: const EdgeInsets.fromLTRB(57, 8, 57, 0),
       child: ContainerShapes(
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              MainMenuContent(
-                  title: title, titleRole: titleRole, description: description),
-              const SizedBox(width: 16),
-              R.profilePlaceHolder,
-            ],
-          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(40, 8, 0, 0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: <Widget>[
+                MainMenuContent(
+                    title: title,
+                    titleRole: titleRole,
+                    description: description),
+                Container(
+                    height: 460,
+                    width: 326,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: R.profilePlaceHolder.image,
+                        fit: BoxFit.contain,
+                      ),
+                    )),
+              ],
+            ),
+          )
         ],
       ),
     );

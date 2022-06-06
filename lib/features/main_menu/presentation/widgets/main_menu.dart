@@ -8,7 +8,7 @@ class MainMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      verticalDirection: VerticalDirection.down,
       children: const <Widget>[
         MainMenuAbout(
             title: 'I’m Douglas Mendes \n',

@@ -17,4 +17,6 @@ class R {
 
   static Image get iconLinkedIn =>
       Image.asset('assets/images/icon_linkedin.png');
+
+  static Image get profileImage => Image.asset('assets/images/profile.jpg');
 }
