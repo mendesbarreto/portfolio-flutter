@@ -27,12 +27,12 @@ class ContainerShapes extends StatelessWidget {
           ),
         ),
         Positioned(
-          bottom: 24,
-          right: 33,
+          bottom: 12,
+          right: 12,
           child: CustomPaint(
             painter: TrianglePainter(
                 color: Colors.red, strokeWidth: 2.5, rotation: 0),
-            size: const Size(16, 16),
+            size: const Size(10, 10),
           ),
         ),
         Positioned(

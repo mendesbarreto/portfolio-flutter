@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
-import 'features/profile/presentation/widgets/profile.dart';
+import 'features/left_menu/presentation/widgets/left_menu.dart';
+import 'features/main_menu/presentation/widgets/main_menu.dart';
+import 'features/right_menu/presentation/widgets/right_menu.dart';
 
 void main() {
   runApp(const PortfolioApp());
@@ -31,12 +33,12 @@ class PortfolioApp extends StatelessWidget {
           textTheme: const TextTheme(
             headline3: TextStyle(
               color: Color(0xff2b2b2b),
-              fontSize: 48.0,
+              fontSize: 40.0,
               fontWeight: FontWeight.bold,
             ),
             subtitle1: TextStyle(
               color: Color(0xff767676),
-              fontSize: 16,
+              fontSize: 14,
               height: 24.0 / 16,
               fontWeight: FontWeight.normal,
             ),
@@ -76,14 +78,40 @@ class _HomePageState extends State<HomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      backgroundColor: const Color(0xFFEFF0F7),
-      body: LayoutBuilder(
-        builder: (BuildContext context, BoxConstraints constraints) {
-          return const Center(
-            child: Profile(),
-          );
-        },
-      ),
-    );
+        backgroundColor: const Color(0xFFEFF0F7),
+        body: LayoutBuilder(
+          builder: (BuildContext context, BoxConstraints constraints) {
+            return Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              //Center Column contents vertically,//Center Column contents horizontally
+              children: <Widget>[
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  //Center Column contents vertically,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  //Center Column contents horizontally
+                  children: const <Widget>[
+                    SizedBox(width: 22),
+                    SizedBox(
+                      width: 288,
+                      child: LeftMenu(),
+                    ),
+                    SizedBox(width: 8),
+                    SizedBox(
+                      width: 990,
+                      height: 550,
+                      child: MainMenu(),
+                    ),
+                    SizedBox(width: 8),
+                    SizedBox(
+                      width: 100,
+                      child: RightMenu(),
+                    ),
+                  ],
+                ),
+              ],
+            );
+          },
+        ));
   }
 }

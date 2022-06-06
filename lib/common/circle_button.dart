@@ -29,7 +29,7 @@ class CircleButton extends StatelessWidget {
           padding: const EdgeInsets.all(0),
           icon: ImageIcon(
             imageAsset.image,
-            size: iconSize ?? 16,
+            size: iconSize ?? 14,
           ),
           iconSize: iconSize ?? 10,
           onPressed: () {},
