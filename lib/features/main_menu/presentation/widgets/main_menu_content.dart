@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../../../../common/basic_button.dart';
+import '../../../../common/r.dart';
 
 class MainMenuContent extends StatelessWidget {
   const MainMenuContent({
@@ -37,11 +38,11 @@ class MainMenuContent extends StatelessWidget {
         ),
         const SizedBox(height: 48),
         SizedBox(
-          height: 52,
-          width: 154,
+          height: 50,
+          width: 136,
           child: BasicButton(
             onPressed: () {},
-            rightImage: Image.asset('assets/images/icon_arrow_right.png'),
+            rightImage: R.iconArrowRight,
             text: 'Hire me'.toUpperCase(),
           ),
         ),
