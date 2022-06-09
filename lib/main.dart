@@ -56,18 +56,6 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -90,20 +78,21 @@ class _HomePageState extends State<HomePage> {
                   //Center Column contents vertically,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   //Center Column contents horizontally
-                  children: const <Widget>[
-                    SizedBox(width: 22),
+                  children: <Widget>[
+                    const SizedBox(width: 22),
                     SizedBox(
                       width: 288,
-                      child: LeftMenu(),
+                      child: Container(
+                          color: Colors.white, child: const LeftMenu()),
                     ),
-                    SizedBox(width: 8),
-                    SizedBox(
+                    const SizedBox(width: 8),
+                    const SizedBox(
                       width: 990,
                       height: 550,
                       child: MainMenu(),
                     ),
-                    SizedBox(width: 8),
-                    SizedBox(
+                    const SizedBox(width: 8),
+                    const SizedBox(
                       width: 100,
                       child: RightMenu(),
                     ),
