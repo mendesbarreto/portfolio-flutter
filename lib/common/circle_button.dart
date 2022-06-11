@@ -45,27 +45,5 @@ class CircleButton extends StatelessWidget {
         ),
       ),
     );
-    //   SizedBox(
-    //   height: size?.height ?? 24,
-    //   width: size?.width ?? 24,
-    //   child: InkWell(
-    //     child: Ink(
-    //       decoration: ShapeDecoration(
-    //         color: Theme.of(context).primaryColor,
-    //         shape: const CircleBorder(),
-    //       ),
-    //       child: IconButton(
-    //         splashRadius: size?.width ?? 16,
-    //         padding: const EdgeInsets.all(0),
-    //         icon: ImageIcon(
-    //           imageAsset.image,
-    //           size: iconSize ?? 14,
-    //         ),
-    //         iconSize: iconSize ?? 10,
-    //         onPressed: () {},
-    //       ),
-    //     ),
-    //   ),
-    // );
   }
 }

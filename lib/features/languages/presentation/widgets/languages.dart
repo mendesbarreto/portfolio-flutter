@@ -8,6 +8,10 @@ class Languages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
+      Container(
+          alignment: Alignment.topLeft,
+          padding: const EdgeInsets.only(bottom: 20),
+          child: Text('Idioms', style: Theme.of(context).textTheme.titleSmall)),
       PercentageBarWithText(
           text: 'Portuguese',
           percentage: 100,
