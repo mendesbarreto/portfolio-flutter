@@ -69,36 +69,38 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color(0xFFEFF0F7),
         body: LayoutBuilder(
           builder: (BuildContext context, BoxConstraints constraints) {
-            return Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              //Center Column contents vertically,//Center Column contents horizontally
-              children: <Widget>[
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  //Center Column contents vertically,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  //Center Column contents horizontally
-                  children: <Widget>[
-                    const SizedBox(width: 22),
-                    SizedBox(
-                      width: 288,
-                      child: Container(
-                          color: Colors.white, child: const LeftMenu()),
-                    ),
-                    const SizedBox(width: 8),
-                    const SizedBox(
-                      width: 990,
-                      height: 550,
-                      child: MainMenu(),
-                    ),
-                    const SizedBox(width: 8),
-                    const SizedBox(
-                      width: 100,
-                      child: RightMenu(),
-                    ),
-                  ],
-                ),
-              ],
+            return SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                //Center Column contents vertically,//Center Column contents horizontally
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    //Center Column contents vertically,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    //Center Column contents horizontally
+                    children: <Widget>[
+                      const SizedBox(width: 22),
+                      SizedBox(
+                        width: 288,
+                        child: Container(
+                            color: Colors.white, child: const LeftMenu()),
+                      ),
+                      const SizedBox(width: 8),
+                      const SizedBox(
+                        width: 990,
+                        height: 550,
+                        child: MainMenu(),
+                      ),
+                      const SizedBox(width: 8),
+                      const SizedBox(
+                        width: 100,
+                        child: RightMenu(),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             );
           },
         ));

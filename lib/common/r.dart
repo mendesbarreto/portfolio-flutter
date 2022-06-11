@@ -8,6 +8,9 @@ class R {
   static Image get iconArrowRight =>
       Image.asset('assets/images/icon_arrow_right.png');
 
+  static Image get iconDownload =>
+      Image.asset('assets/images/icon_download.png');
+
   static Image get iconFacebook =>
       Image.asset('assets/images/icon_facebook.png');
 
@@ -19,4 +22,6 @@ class R {
       Image.asset('assets/images/icon_linkedin.png');
 
   static Image get profileImage => Image.asset('assets/images/profile.jpg');
+
+  static Image get iconTools => Image.asset('assets/images/tools_icon.png');
 }
