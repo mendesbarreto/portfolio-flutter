@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'features/left_menu/presentation/widgets/left_menu.dart';
 import 'features/main_menu/presentation/widgets/main_menu.dart';
+import 'features/my_services/presentation/widget/my_services.dart';
 import 'features/right_menu/presentation/widgets/right_menu.dart';
 
 void main() {
@@ -38,7 +39,7 @@ class PortfolioApp extends StatelessWidget {
             ),
             subtitle1: TextStyle(
               color: Color(0xff767676),
-              fontSize: 14,
+              fontSize: 16,
               height: 24.0 / 16,
               fontWeight: FontWeight.normal,
             ),
@@ -87,10 +88,12 @@ class _HomePageState extends State<HomePage> {
                             color: Colors.white, child: const LeftMenu()),
                       ),
                       const SizedBox(width: 8),
-                      const SizedBox(
-                        width: 990,
-                        height: 550,
-                        child: MainMenu(),
+                      Column(
+                        children: const <Widget>[
+                          SizedBox(width: 990, height: 550, child: MainMenu()),
+                          SizedBox(
+                              width: 990, height: 800, child: MyServices()),
+                        ],
                       ),
                       const SizedBox(width: 8),
                       const SizedBox(
