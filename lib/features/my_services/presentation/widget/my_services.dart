@@ -1,49 +1,26 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/r.dart';
-import 'my_services_card.dart';
+import 'my_services_grid.dart';
 
 class MyServices extends StatelessWidget {
   const MyServices({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
-      primary: false,
-      crossAxisCount: 3,
-      crossAxisSpacing: 20,
-      mainAxisSpacing: 20,
+    return Column(
       children: <Widget>[
-        MyServicesCard(
-          title: 'Mobile Development',
-          description: 'iOS, Android, Flutter',
-          icon: R.iconMobileDevelopment,
+        Text('My Services', style: Theme.of(context).textTheme.headline4),
+        const SizedBox(height: 32),
+        FractionallySizedBox(
+          widthFactor: 0.4,
+          child: Text(
+              'All these services below are available to anyone who would like to hire me, '
+              'whether for a full-time job or a limited amount of hours.',
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.bodyLarge),
         ),
-        MyServicesCard(
-          title: 'Backend Development',
-          description: 'TypeScript/JS, GoLang, C#',
-          icon: R.iconBackendDevelopment,
-        ),
-        MyServicesCard(
-          title: 'Web Development',
-          description: 'iOS, Android, Flutter',
-          icon: R.iconWebDevelopment,
-        ),
-        MyServicesCard(
-          title: 'Consulting',
-          description: 'Cloud, Development, Devops etc',
-          icon: R.iconConsultation,
-        ),
-        MyServicesCard(
-          title: 'Mentoring',
-          description: 'Help people learn to code',
-          icon: R.iconMentoring,
-        ),
-        MyServicesCard(
-          title: 'DevOps',
-          description: 'K8s, Docker, Terraform',
-          icon: R.iconDevops,
-        ),
+        const SizedBox(height: 32),
+        const MyServicesGrid()
       ],
     );
   }

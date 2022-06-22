@@ -37,6 +37,11 @@ class PortfolioApp extends StatelessWidget {
               fontSize: 40.0,
               fontWeight: FontWeight.bold,
             ),
+            headline4: TextStyle(
+              color: Color(0xff2b2b2b),
+              fontSize: 30.0,
+              fontWeight: FontWeight.bold,
+            ),
             subtitle1: TextStyle(
               color: Color(0xff767676),
               fontSize: 16,
