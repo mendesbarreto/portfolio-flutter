@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../common/page_header.dart';
 import 'my_services_grid.dart';
 
 class MyServices extends StatelessWidget {
@@ -8,19 +9,14 @@ class MyServices extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: <Widget>[
-        Text('My Services', style: Theme.of(context).textTheme.headline4),
-        const SizedBox(height: 32),
-        FractionallySizedBox(
-          widthFactor: 0.4,
-          child: Text(
-              'All these services below are available to anyone who would like to hire me, '
-              'whether for a full-time job or a limited amount of hours.',
-              textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyLarge),
-        ),
-        const SizedBox(height: 32),
-        const MyServicesGrid()
+      children: const <Widget>[
+        PageHeader(
+            title: 'My Services',
+            description:
+                'All these services below are available to anyone who would like to hire me, '
+                'whether for a full-time job or a limited amount of hours.'),
+        SizedBox(height: 32),
+        MyServicesGrid()
       ],
     );
   }
