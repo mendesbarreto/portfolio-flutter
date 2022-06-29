@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class LeftMenuItemSeparator extends StatelessWidget {
-  const LeftMenuItemSeparator({super.key});
+class ItemSeparator extends StatelessWidget {
+  const ItemSeparator({super.key});
 
   @override
   Widget build(BuildContext context) {
