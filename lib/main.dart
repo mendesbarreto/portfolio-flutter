@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'features/left_menu/presentation/widgets/left_menu.dart';
 import 'features/main_menu/presentation/widgets/main_menu.dart';
+import 'features/my_services/presentation/widget/my_services.dart';
 import 'features/right_menu/presentation/widgets/right_menu.dart';
 import 'features/work_history/presentation/widgets/work_history.dart';
 
@@ -94,12 +95,19 @@ class _HomePageState extends State<HomePage> {
                       ),
                       const SizedBox(width: 8),
                       Column(
-                        children: const <Widget>[
-                          SizedBox(width: 990, height: 550, child: MainMenu()),
-                          // SizedBox(
-                          //     width: 990, height: 800, child: MyServices()),
-                          SizedBox(
-                              width: 990, height: 800, child: WorkHistory()),
+                        children: <Widget>[
+                          const SizedBox(
+                              width: 990, height: 550, child: MainMenu()),
+                          Container(
+                            padding: const EdgeInsets.all(32),
+                            child: const SizedBox(
+                                width: 980, height: 700, child: MyServices()),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.fromLTRB(32, 0, 32, 0),
+                            child: const SizedBox(
+                                width: 990, height: 800, child: WorkHistory()),
+                          ),
                         ],
                       ),
                       const SizedBox(width: 8),
