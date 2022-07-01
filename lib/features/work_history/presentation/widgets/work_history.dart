@@ -20,7 +20,7 @@ class WorkHistory extends StatelessWidget {
         Container(
           decoration: const BoxDecoration(color: Colors.white),
           child: Column(
-            children: [
+            children: <Widget>[
               CareerCard(
                   title: 'Software Eng Manager',
                   startDate: DateTime.parse('1988-06-04'),
