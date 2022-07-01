@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/page_header.dart';
+import '../../../../common/presentation/widget/page_header.dart';
 import 'my_services_grid.dart';
 
 class MyServices extends StatelessWidget {

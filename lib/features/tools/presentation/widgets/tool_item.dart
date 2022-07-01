@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/r.dart';
+import '../../../../common/presentation/widget/r.dart';
 
 class ToolItem extends StatelessWidget {
   const ToolItem({super.key, required this.text});

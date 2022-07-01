@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-import '../../../../common/basic_button.dart';
-import '../../../../common/r.dart';
+import '../../../../common/presentation/widget/basic_button.dart';
+import '../../../../common/presentation/widget/r.dart';
 
 class MainMenuContent extends StatelessWidget {
   const MainMenuContent({

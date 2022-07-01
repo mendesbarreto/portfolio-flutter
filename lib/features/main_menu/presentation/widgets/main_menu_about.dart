@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/r.dart';
+import '../../../../common/presentation/widget/r.dart';
 import 'container_shapes.dart';
 import 'main_menu_content.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/item_separator.dart';
-import '../../../../common/page_header.dart';
+import '../../../../common/presentation/widget/item_separator.dart';
+import '../../../../common/presentation/widget/page_header.dart';
 import 'career_card.dart';
 
 class WorkHistory extends StatelessWidget {

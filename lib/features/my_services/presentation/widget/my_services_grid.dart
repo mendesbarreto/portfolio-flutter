@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/r.dart';
+import '../../../../common/presentation/widget/r.dart';
 import 'my_services_card.dart';
 
 class MyServicesGrid extends StatelessWidget {

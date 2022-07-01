@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/app_theme_data.dart';
-import '../../../../common/circle_button.dart';
-import '../../../../common/r.dart';
+import '../../../../common/presentation/widget/app_theme_data.dart';
+import '../../../../common/presentation/widget/circle_button.dart';
+import '../../../../common/presentation/widget/r.dart';
 
 class ProfileImage extends StatelessWidget {
   const ProfileImage({
