@@ -4,8 +4,8 @@ import 'package:flutter/widgets.dart';
 import '../../../../common/presentation/widget/basic_button.dart';
 import '../../../../common/presentation/widget/r.dart';
 
-class MainMenuContent extends StatelessWidget {
-  const MainMenuContent({
+class MainMenuContentWidget extends StatelessWidget {
+  const MainMenuContentWidget({
     super.key,
     required this.title,
     required this.titleRole,

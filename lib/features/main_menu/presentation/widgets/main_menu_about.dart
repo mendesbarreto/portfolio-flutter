@@ -4,8 +4,8 @@ import '../../../../common/presentation/widget/r.dart';
 import 'container_shapes.dart';
 import 'main_menu_content.dart';
 
-class MainMenuAbout extends StatelessWidget {
-  const MainMenuAbout({
+class MainMenuAboutWidget extends StatelessWidget {
+  const MainMenuAboutWidget({
     super.key,
     required this.title,
     required this.titleRole,
@@ -27,7 +27,7 @@ class MainMenuAbout extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                MainMenuContent(
+                MainMenuContentWidget(
                     title: title,
                     titleRole: titleRole,
                     description: description),

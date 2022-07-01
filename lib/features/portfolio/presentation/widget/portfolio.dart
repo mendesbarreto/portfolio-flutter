@@ -4,8 +4,8 @@ import '../../../../common/presentation/widget/card_widget.dart';
 import '../../../../common/presentation/widget/page_header.dart';
 import '../../../../common/presentation/widget/r.dart';
 
-class Portfolio extends StatelessWidget {
-  const Portfolio({super.key});
+class PortfolioWidget extends StatelessWidget {
+  const PortfolioWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

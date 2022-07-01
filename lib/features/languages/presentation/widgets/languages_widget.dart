@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../../common/presentation/widget/percentage_bar_with_text.dart';
 
-class Languages extends StatelessWidget {
-  const Languages({super.key});
+class LanguagesWidget extends StatelessWidget {
+  const LanguagesWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

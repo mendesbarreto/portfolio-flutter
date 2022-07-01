@@ -3,33 +3,10 @@ import 'package:flutter/material.dart';
 import '../../../../common/presentation/widget/app_theme_data.dart';
 import '../../../../common/presentation/widget/circle_button.dart';
 import '../../../../common/presentation/widget/r.dart';
+import 'profile_image.dart';
 
-class ProfileImage extends StatelessWidget {
-  const ProfileImage({
-    super.key,
-    required this.image,
-  });
-
-  final Image image;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 150,
-      height: 150,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        image: DecorationImage(
-          image: image.image,
-          fit: BoxFit.cover,
-        ),
-      ),
-    );
-  }
-}
-
-class Profile extends StatelessWidget {
-  const Profile({super.key});
+class ProfileWidget extends StatelessWidget {
+  const ProfileWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

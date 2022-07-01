@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import '../../../../common/presentation/widget/r.dart';
 import 'my_services_card.dart';
 
-class MyServicesGrid extends StatelessWidget {
-  const MyServicesGrid({super.key});
+class MyServicesGridWidget extends StatelessWidget {
+  const MyServicesGridWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,32 +17,32 @@ class MyServicesGrid extends StatelessWidget {
       childAspectRatio: 1.4,
       physics: const NeverScrollableScrollPhysics(),
       children: <Widget>[
-        MyServicesCard(
+        MyServicesCardWidget(
           title: 'Mobile Development',
           description: 'iOS, Android, Flutter',
           icon: R.iconMobileDevelopment,
         ),
-        MyServicesCard(
+        MyServicesCardWidget(
           title: 'Backend Development',
           description: 'TypeScript/JS, GoLang, C#',
           icon: R.iconBackendDevelopment,
         ),
-        MyServicesCard(
+        MyServicesCardWidget(
           title: 'Web Development',
           description: 'iOS, Android, Flutter',
           icon: R.iconWebDevelopment,
         ),
-        MyServicesCard(
+        MyServicesCardWidget(
           title: 'Consulting',
           description: 'Cloud, Development, Devops etc',
           icon: R.iconConsultation,
         ),
-        MyServicesCard(
+        MyServicesCardWidget(
           title: 'Mentoring',
           description: 'Help people learn to code',
           icon: R.iconMentoring,
         ),
-        MyServicesCard(
+        MyServicesCardWidget(
           title: 'DevOps',
           description: 'K8s, Docker, Terraform',
           icon: R.iconDevops,

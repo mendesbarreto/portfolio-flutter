@@ -98,28 +98,30 @@ class _HomePageState extends State<HomePage> {
                       Column(
                         children: <Widget>[
                           const SizedBox(
-                              width: 990, height: 550, child: MainMenu()),
+                              width: 990, height: 550, child: MainMenuWidget()),
                           Container(
                             padding: const EdgeInsets.fromLTRB(32, 0, 32, 0),
-                            child:
-                                const SizedBox(width: 990, child: Portfolio()),
+                            child: const SizedBox(
+                                width: 990, child: PortfolioWidget()),
                           ),
                           Container(
                             padding: const EdgeInsets.all(32),
-                            child:
-                                const SizedBox(width: 980, child: MyServices()),
+                            child: const SizedBox(
+                                width: 980, child: MyServicesWidget()),
                           ),
                           Container(
                             padding: const EdgeInsets.fromLTRB(32, 0, 32, 0),
                             child: const SizedBox(
-                                width: 990, height: 800, child: WorkHistory()),
+                                width: 990,
+                                height: 800,
+                                child: WorkHistoryWidget()),
                           ),
                         ],
                       ),
                       const SizedBox(width: 8),
                       const SizedBox(
                         width: 100,
-                        child: RightMenu(),
+                        child: RightMenuWidget(),
                       ),
                     ],
                   ),

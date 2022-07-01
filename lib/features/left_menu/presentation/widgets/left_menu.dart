@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../common/presentation/widget/basic_button.dart';
 import '../../../../common/presentation/widget/item_separator.dart';
 import '../../../../common/presentation/widget/r.dart';
-import '../../../languages/presentation/widgets/languages.dart';
+import '../../../languages/presentation/widgets/languages_widget.dart';
 import '../../../profile/presentation/widgets/profile.dart';
 import '../../../skills/presentation/widgets/programming_languages.dart';
 import '../../../tools/presentation/widgets/tools.dart';
@@ -18,15 +18,15 @@ class LeftMenu extends StatelessWidget {
         children: <Widget>[
           const Padding(
             padding: EdgeInsets.only(top: 50, bottom: 20),
-            child: Profile(),
+            child: ProfileWidget(),
           ),
           const ItemSeparator(),
-          const Padding(padding: EdgeInsets.all(20), child: Tools()),
+          const Padding(padding: EdgeInsets.all(20), child: ToolsWidget()),
           const ItemSeparator(),
           const Padding(
-              padding: EdgeInsets.all(20), child: ProgrammingLanguages()),
+              padding: EdgeInsets.all(20), child: ProgrammingLanguagesWidget()),
           const ItemSeparator(),
-          const Padding(padding: EdgeInsets.all(20), child: Languages()),
+          const Padding(padding: EdgeInsets.all(20), child: LanguagesWidget()),
           const ItemSeparator(),
           Container(
             height: 50,
