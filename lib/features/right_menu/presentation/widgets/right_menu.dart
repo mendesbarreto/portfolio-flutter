@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class RightMenu extends StatelessWidget {
-  const RightMenu({super.key});
+class RightMenuWidget extends StatelessWidget {
+  const RightMenuWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

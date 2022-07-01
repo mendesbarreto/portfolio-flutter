@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class MyServicesCard extends StatelessWidget {
-  const MyServicesCard(
+class MyServicesCardWidget extends StatelessWidget {
+  const MyServicesCardWidget(
       {super.key,
       required this.title,
       required this.description,

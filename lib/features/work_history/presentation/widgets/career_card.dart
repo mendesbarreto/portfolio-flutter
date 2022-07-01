@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-class CareerCard extends StatelessWidget {
-  const CareerCard(
+class CareerCardWidget extends StatelessWidget {
+  const CareerCardWidget(
       {super.key,
       required this.title,
       required this.startDate,

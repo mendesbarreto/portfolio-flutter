@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'main_menu_about.dart';
 
-class MainMenu extends StatelessWidget {
-  const MainMenu({super.key});
+class MainMenuWidget extends StatelessWidget {
+  const MainMenuWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: const <Widget>[
-        MainMenuAbout(
+        MainMenuAboutWidget(
             title: 'I’m Douglas Mendes \n',
             titleRole: 'Software Engineer',
             description: '12 years of experience in developing and deploying \n'

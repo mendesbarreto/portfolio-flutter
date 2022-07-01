@@ -39,7 +39,7 @@ class ContainerShapes extends StatelessWidget {
           top: 52,
           left: 520,
           child: CustomPaint(
-            painter: CirclePainter(
+            painter: CirclePainterWidget(
                 color: Colors.lightGreenAccent, strokeWidth: 2.5, rotation: 0),
             size: const Size(16, 16),
           ),
@@ -48,7 +48,7 @@ class ContainerShapes extends StatelessWidget {
           bottom: 71,
           right: 396,
           child: CustomPaint(
-            painter: CirclePainter(
+            painter: CirclePainterWidget(
                 color: Theme.of(context).primaryColor,
                 strokeWidth: 2.5,
                 rotation: 0),
@@ -68,7 +68,7 @@ class ContainerShapes extends StatelessWidget {
           top: 30,
           left: 40,
           child: CustomPaint(
-            painter: CirclePainter(
+            painter: CirclePainterWidget(
                 color: Theme.of(context).primaryColor,
                 strokeWidth: 2.5,
                 rotation: 0),
@@ -79,7 +79,7 @@ class ContainerShapes extends StatelessWidget {
           bottom: 29,
           left: 78,
           child: CustomPaint(
-            painter: CirclePainter(
+            painter: CirclePainterWidget(
                 color: Colors.lightGreenAccent, strokeWidth: 2.5, rotation: 0),
             size: const Size(16, 16),
           ),

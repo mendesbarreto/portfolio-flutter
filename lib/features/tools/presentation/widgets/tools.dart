@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'tool_item.dart';
 
-class Tools extends StatelessWidget {
-  const Tools({super.key});
+class ToolsWidget extends StatelessWidget {
+  const ToolsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,27 +13,27 @@ class Tools extends StatelessWidget {
           padding: const EdgeInsets.only(bottom: 20),
           child: Text('Tools & FrameWorks',
               style: Theme.of(context).textTheme.titleSmall)),
-      const ToolItem(text: 'Mobile Development'),
+      const ToolItemWidget(text: 'Mobile Development'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'Git, Github, Bitbucket, Gitlab'),
+      const ToolItemWidget(text: 'Git, Github, Bitbucket, Gitlab'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'Flutter, React Native, Native'),
+      const ToolItemWidget(text: 'Flutter, React Native, Native'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'API, GraphQL, REST'),
+      const ToolItemWidget(text: 'API, GraphQL, REST'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'Docker, Kubernetes, Terraform'),
+      const ToolItemWidget(text: 'Docker, Kubernetes, Terraform'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'NodeJS, Express, Fastfy'),
+      const ToolItemWidget(text: 'NodeJS, Express, Fastfy'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'Fiber, Rocket, Gin'),
+      const ToolItemWidget(text: 'Fiber, Rocket, Gin'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'MVC, MVP, MVVM'),
+      const ToolItemWidget(text: 'MVC, MVP, MVVM'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'Clean Architecture'),
+      const ToolItemWidget(text: 'Clean Architecture'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'AWS, Google Cloud'),
+      const ToolItemWidget(text: 'AWS, Google Cloud'),
       const SizedBox(height: 5),
-      const ToolItem(text: 'MongoDB, PostgreSQL, MySQL'),
+      const ToolItemWidget(text: 'MongoDB, PostgreSQL, MySQL'),
     ]);
   }
 }

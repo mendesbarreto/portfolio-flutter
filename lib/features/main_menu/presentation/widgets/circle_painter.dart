@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 
 import 'stroke_shape_painter.dart';
 
-class CirclePainter extends StrokeShapePainter {
-  CirclePainter(
+class CirclePainterWidget extends StrokeShapePainter {
+  CirclePainterWidget(
       {required super.color,
       required super.strokeWidth,
       required super.rotation});

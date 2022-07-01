@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/item_separator.dart';
-import '../../../../common/page_header.dart';
+import '../../../../common/presentation/widget/item_separator.dart';
+import '../../../../common/presentation/widget/page_header.dart';
 import 'career_card.dart';
 
-class WorkHistory extends StatelessWidget {
-  const WorkHistory({super.key});
+class WorkHistoryWidget extends StatelessWidget {
+  const WorkHistoryWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class WorkHistory extends StatelessWidget {
           decoration: const BoxDecoration(color: Colors.white),
           child: Column(
             children: <Widget>[
-              CareerCard(
+              CareerCardWidget(
                   title: 'Software Eng Manager',
                   startDate: DateTime.parse('1988-06-04'),
                   endDate: DateTime.parse('1988-06-04'),
@@ -32,7 +32,7 @@ class WorkHistory extends StatelessWidget {
                       "development team, and oversaw the development of the company's "
                       'software products.'),
               const ItemSeparator(),
-              CareerCard(
+              CareerCardWidget(
                   title: 'Software Eng Manager',
                   startDate: DateTime.parse('1988-06-04'),
                   endDate: DateTime.parse('1988-06-04'),
@@ -43,7 +43,7 @@ class WorkHistory extends StatelessWidget {
                       "development team, and oversaw the development of the company's "
                       'software products.'),
               const ItemSeparator(),
-              CareerCard(
+              CareerCardWidget(
                   title: 'Software Eng Manager',
                   startDate: DateTime.parse('1988-06-04'),
                   endDate: DateTime.parse('1988-06-04'),
