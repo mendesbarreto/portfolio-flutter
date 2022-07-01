@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'features/left_menu/presentation/widgets/left_menu.dart';
 import 'features/main_menu/presentation/widgets/main_menu.dart';
 import 'features/my_services/presentation/widget/my_services.dart';
-import 'features/portfolio/presentation/widget/Portfolio.dart';
+import 'features/portfolio/presentation/widget/portfolio.dart';
 import 'features/right_menu/presentation/widgets/right_menu.dart';
 import 'features/work_history/presentation/widgets/work_history.dart';
 
