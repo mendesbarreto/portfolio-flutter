@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../../common/presentation/widget/card_widget.dart';
+import '../../../../common/presentation/widget/card.dart';
 import '../../../../common/presentation/widget/page_header.dart';
 import '../../../../common/presentation/widget/r.dart';
 

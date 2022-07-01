@@ -61,7 +61,7 @@ class CardWidget extends StatelessWidget {
                           text: platform,
                           style: Theme.of(context).textTheme.bodySmall),
                     ],
-                  ))
+                  )),
                 ],
               ),
             ),
