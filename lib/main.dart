@@ -99,11 +99,6 @@ class _HomePageState extends State<HomePage> {
                           const SizedBox(
                               width: 990, height: 550, child: MainMenuWidget()),
                           Container(
-                            padding: const EdgeInsets.fromLTRB(32, 0, 32, 0),
-                            child: const SizedBox(
-                                width: 990, child: PortfolioWidget()),
-                          ),
-                          Container(
                             padding: const EdgeInsets.all(32),
                             child: const SizedBox(
                                 width: 980, child: MyServicesWidget()),
@@ -114,6 +109,11 @@ class _HomePageState extends State<HomePage> {
                                 width: 990,
                                 height: 800,
                                 child: WorkHistoryWidget()),
+                          ),
+                          Container(
+                            padding: const EdgeInsets.fromLTRB(32, 0, 32, 0),
+                            child: const SizedBox(
+                                width: 990, child: PortfolioWidget()),
                           ),
                         ],
                       ),
