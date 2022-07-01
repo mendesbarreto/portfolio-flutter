@@ -12,15 +12,17 @@ class BasicButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onPressed,
-      style: ElevatedButton.styleFrom(primary: Theme.of(context).buttonColor),
+      style: ElevatedButton.styleFrom(primary: Theme.of(context).primaryColor),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Text(text, style: const TextStyle(color: Colors.black)),
-          if (rightImage != null) const SizedBox(width: 8),
-          if (rightImage != null) rightImage!,
+          if (hasRightImage()) const SizedBox(width: 8),
+          if (hasRightImage()) rightImage!,
         ],
       ),
     );
   }
+
+  bool hasRightImage() => rightImage != null;
 }

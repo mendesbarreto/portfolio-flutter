@@ -31,7 +31,6 @@ class PortfolioApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
           primaryColor: const Color(0xFFFFB400),
-          buttonColor: const Color(0xFFFFB502),
           fontFamily: 'Inter',
           textTheme: const TextTheme(
             headline3: TextStyle(

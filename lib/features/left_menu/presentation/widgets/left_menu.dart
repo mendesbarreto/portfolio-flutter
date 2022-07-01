@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../common/presentation/widget/basic_button.dart';
 import '../../../../common/presentation/widget/item_separator.dart';
 import '../../../../common/presentation/widget/r.dart';
-import '../../../languages/presentation/widgets/languages_widget.dart';
+import '../../../languages/presentation/widgets/languages.dart';
 import '../../../profile/presentation/widgets/profile.dart';
 import '../../../skills/presentation/widgets/programming_languages.dart';
 import '../../../tools/presentation/widgets/tools.dart';
