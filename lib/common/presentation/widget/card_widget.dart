@@ -18,13 +18,9 @@ class CardWidget extends StatelessWidget {
       child: Stack(
         fit: StackFit.expand,
         children: <Widget>[
-          Expanded(
-            child: ClipRect(
-              child: Image(
-                image: image,
-                fit: BoxFit.cover,
-              ),
-            ),
+          Image(
+            image: image,
+            fit: BoxFit.cover,
           ),
           Positioned(
             bottom: 0,
