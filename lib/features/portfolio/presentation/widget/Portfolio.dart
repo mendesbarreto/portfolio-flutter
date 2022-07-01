@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../common/card_widget.dart';
 import '../../../../common/page_header.dart';
+import '../../../../common/r.dart';
 
 class Portfolio extends StatelessWidget {
   const Portfolio({super.key});
@@ -25,72 +27,30 @@ class Portfolio extends StatelessWidget {
           childAspectRatio: 1.4,
           physics: const NeverScrollableScrollPhysics(),
           children: <Widget>[
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_1.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_2.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_3.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_4.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_5.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_6.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_7.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_8.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_9.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_10.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-            Container(
-              child: Image.asset(
-                'assets/images/portfolio/portfolio_11.png',
-                fit: BoxFit.cover,
-              ),
-            ),
+            CardWidget(
+                title: 'Itaú Mobile Bank App',
+                platform: 'iOS, Android',
+                image: R.portfolioPlaceHolder.image),
+            CardWidget(
+                title: 'Itaú Mobile Bank App',
+                platform: 'iOS, Android',
+                image: R.portfolioPlaceHolder.image),
+            CardWidget(
+                title: 'Itaú Mobile Bank App',
+                platform: 'iOS, Android',
+                image: R.portfolioPlaceHolder.image),
+            CardWidget(
+                title: 'Itaú Mobile Bank App',
+                platform: 'iOS, Android',
+                image: R.portfolioPlaceHolder.image),
+            CardWidget(
+                title: 'Itaú Mobile Bank App',
+                platform: 'iOS, Android',
+                image: R.portfolioPlaceHolder.image),
+            CardWidget(
+                title: 'Itaú Mobile Bank App',
+                platform: 'iOS, Android',
+                image: R.portfolioPlaceHolder.image),
           ],
         )
       ],

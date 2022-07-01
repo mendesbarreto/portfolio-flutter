@@ -5,6 +5,9 @@ class R {
   static Image get profilePlaceHolder =>
       Image.asset('assets/images/profile_place_holder.png');
 
+  static Image get portfolioPlaceHolder =>
+      Image.asset('assets/images/portfolio_place_holder.png');
+
   static Image get profileImage => Image.asset('assets/images/profile.jpg');
 
   static Image get iconArrowRight =>
