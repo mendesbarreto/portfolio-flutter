@@ -36,7 +36,8 @@ class LeftMenu extends StatelessWidget {
               rightImage: R.iconDownload,
               text: 'Download CV'.toUpperCase(),
             ),
-          )
+          ),
+          const SizedBox(height: 20),
         ],
       ),
     );
