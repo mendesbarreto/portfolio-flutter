@@ -11,6 +11,13 @@ void main() {
   runApp(const PortfolioApp());
 }
 
+class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
 class PortfolioApp extends StatelessWidget {
   const PortfolioApp({super.key});
 
@@ -18,7 +25,7 @@ class PortfolioApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Douglas Mendes',
       theme: ThemeData(
           // This is the theme of your application.
           //
@@ -55,15 +62,7 @@ class PortfolioApp extends StatelessWidget {
   }
 }
 
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
 class _HomePageState extends State<HomePage> {
-
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
